@@ -6,10 +6,20 @@
     <description>Recent content in sql技巧 on Website of Vancer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wibur.github.io/tags/sql%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MySQL 視圖應用</title>
+      <link>https://wibur.github.io/post/sql-view/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wibur.github.io/post/sql-view/</guid>
+      <description>介紹 視圖本身是虛擬的表，因此不會儲存資料，只負責儲存sql語句，但須注意資料量過大時會影響資料庫效能;用來把複雜的sql語句做包裝，進而達成保護真正sql語句的目的
+視圖創建 CREATE VIEW &amp;quot;視圖表名&amp;quot; AS &amp;quot;SQL SELECT 語句&amp;quot;; 如何簡化 像是下面的語句 SELECT count(*) AS count, sum( price ) AS sum_price FROM tb_goods 建立一個視圖 CREATE view tb_goods_view AS SELECT count(*) AS count, sum( price ) AS sum_price FROM tb_goods 建立後只需下 SELECT * FROM view tb_goods_view 即可達成一樣的結果 可應用場景 當專案有需求做大量統計時，可以建立一張實體表搭配觸發器使用</description>
+    </item>
     
     <item>
       <title>MySQL索引</title>
