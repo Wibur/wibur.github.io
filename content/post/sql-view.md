@@ -10,6 +10,7 @@ categories = [
     "sql",
 ]
 series = ["Themes Guide"]
+aliases = ["migrate-from-jekyl"]
 +++
 
 ## 介紹

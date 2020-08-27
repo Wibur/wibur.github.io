@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Google reCaptcha V3 使用</title>
+      <link>https://wibur.github.io/post/google-captcha/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wibur.github.io/post/google-captcha/</guid>
+      <description>tags: 功能 Google 用途 一定程度防止機器人，V2版本為使用者熟悉的需要點選圖形驗證碼來證明自己不是機器人，但這樣會降低使用者感受;因此推出了V3版本，在網站後端紀錄使用者網站瀏覽的行為過程；模式是以評分方式， 區間為0.1~1，分數越低越可能是機器人，因此網站管理員可以針對分數門檻作驗證程序開啟。
+使用方式   註冊網站的reCAPTCHA =&amp;gt; ( https://www.</description>
+    </item>
+    
+    <item>
       <title>MySQL索引</title>
       <link>https://wibur.github.io/post/sql/</link>
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
