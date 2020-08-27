@@ -1,2 +1,1 @@
-# vancer.github.io
-# Blog
+# Vancer's Blog
