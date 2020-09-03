@@ -42,6 +42,15 @@
     </item>
     
     <item>
+      <title>Running Sum of 1d Array</title>
+      <link>https://wibur.github.io/leetcode/sum_of_1d_array/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wibur.github.io/leetcode/sum_of_1d_array/</guid>
+      <description>Running Sum of 1d Array Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://wibur.github.io/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>

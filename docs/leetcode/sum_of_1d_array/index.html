@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Vancer | About </title>
+    <title> Vancer | Running Sum of 1d Array </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Call me Vancer">
     
@@ -10,15 +10,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://wibur.github.io/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://wibur.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://wibur.github.io/favicons/favicon-16x16.png">
-    <link rel="canonical" href="https://wibur.github.io/about/">
+    <link rel="canonical" href="https://wibur.github.io/leetcode/sum_of_1d_array/">
     
     
     <script type="text/javascript" src="https://wibur.github.io/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://wibur.github.io/images/preview.png"/>
 
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content="Hugo, the world’s fastest framework for building websites"/>
+<meta name="twitter:title" content="Running Sum of 1d Array"/>
+<meta name="twitter:description" content="LeetCode"/>
 
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
@@ -85,7 +85,7 @@
         <li><a  href="/leetcode/" title="">LeetCode</a></li>
         
         
-        <li><a class="current" href="/about/" title="">About</a></li>
+        <li><a  href="/about/" title="">About</a></li>
         
         
         <li class="theme-switch-item">
@@ -102,30 +102,64 @@
     <div class="post-content">
 
       <div class="post-title">
-        <h3>About
+        <h3>Running Sum of 1d Array
         </h3>
         
         </div>
 
-    <p>Written in Go, Hugo is an open source static site generator available under the <a href="https://github.com/gohugoio/hugo/blob/master/LICENSE">Apache Licence 2.0.</a> Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.</p>
-<p>Hugo makes use of a variety of open source projects including:</p>
+    <h1 id="running-sum-of-1d-array">Running Sum of 1d Array</h1>
+<p>Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).</p>
+<p>Return the running sum of nums.</p>
+<h2 id="example1">Example1</h2>
+<pre><code>Input: nums = [1,2,3,4]
+Output: [1,3,6,10]
+Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
+</code></pre><h2 id="constraints">Constraints</h2>
 <ul>
-<li><a href="https://github.com/yuin/goldmark">https://github.com/yuin/goldmark</a></li>
-<li><a href="https://github.com/alecthomas/chroma">https://github.com/alecthomas/chroma</a></li>
-<li><a href="https://github.com/muesli/smartcrop">https://github.com/muesli/smartcrop</a></li>
-<li><a href="https://github.com/spf13/cobra">https://github.com/spf13/cobra</a></li>
-<li><a href="https://github.com/spf13/viper">https://github.com/spf13/viper</a></li>
+<li>1 &lt;= nums.length &lt;= 1000</li>
+<li>-10^6 &lt;= nums[i] &lt;= 10^6</li>
 </ul>
-<p>Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.</p>
-<p>Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.</p>
-<p>Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.</p>
-<p>Learn more and contribute on <a href="https://github.com/gohugoio">GitHub</a>.</p>
+<h2 id="answer">Answer</h2>
+<pre><code>硬解
+/**
+* @param Integer[] $nums
+* @return Integer[]
+*/
+function runningSum($nums) {
+    $len = count($nums);
+    $output = [];
+    for ($i = 0; $i &lt; $len; $i++) {
+        $tmp = 0;
+        for ($j = 0;$j &lt;= $i; $j++) {
+            $tmp += $nums[$j];
+        }
+        $output[] = $tmp;
+    }
+    
+    return $output;
+}
+</code></pre><pre><code>function runningSum($nums) {
+    $last = 0;
+    $result = [];
 
+    foreach($nums as $num) {
+        $new = $num + $last;
+        $last = $new;
+        $result[] = $new;
+    }
+
+    return $result;
+}
+</code></pre>
     </div>
     <div class="post-footer">
       <div class="info">
         
+<span class="separator"><a class="category" href="/categories/%E5%88%B7%E9%A1%8C/">刷題</a></span>
+
         
+    <span class="separator"><a class="tag" href="/tags/leetcode/">LeetCode</a></span>
+
       </div>
     </div>
 

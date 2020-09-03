@@ -68,8 +68,14 @@ url = "mailto:yuchihchen159951@gmail.com"
   identifier = "posts"
   url = "/post/"
 
+[[menu.main]]
+  name = "LeetCode"
+  weight = 300
+  identifier = "practice"
+  url = "/leetcode/"
+
   [[menu.main]]
   name = "About"
-  weight = 300
+  weight = 400
   identifier = "about"
   url = "/about/"
