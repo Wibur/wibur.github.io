@@ -1,7 +1,7 @@
 +++
 author = "Vancer"
 title = "Running Sum of 1d Array"
-date = "2020-07-21"
+date = "2020-09-03"
 description = "LeetCode"
 tags = [
     "LeetCode",

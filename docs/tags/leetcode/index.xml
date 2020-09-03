@@ -6,15 +6,24 @@
     <description>Recent content in LeetCode on Website of Vancer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wibur.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title> Kids With the Greatest Number of Candies</title>
+      <link>https://wibur.github.io/leetcode/kids-with-the-greatest-number-of-candies/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://wibur.github.io/leetcode/kids-with-the-greatest-number-of-candies/</guid>
+      <description>Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the ith kid has.</description>
+    </item>
+    
+    <item>
       <title>Running Sum of 1d Array</title>
       <link>https://wibur.github.io/leetcode/sum_of_1d_array/</link>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://wibur.github.io/leetcode/sum_of_1d_array/</guid>
       <description>Running Sum of 1d Array Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).</description>
