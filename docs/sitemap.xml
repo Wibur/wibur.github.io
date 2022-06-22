@@ -43,12 +43,12 @@
   </url>
   
   <url>
-    <loc>https://wibur.github.io/post/sql-view/</loc>
+    <loc>https://wibur.github.io/databases/</loc>
     <lastmod>2020-08-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wibur.github.io/post/</loc>
+    <loc>https://wibur.github.io/databases/sql-view/</loc>
     <lastmod>2020-08-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -73,7 +73,12 @@
   </url>
   
   <url>
-    <loc>https://wibur.github.io/post/sql/</loc>
+    <loc>https://wibur.github.io/databases/sql/</loc>
+    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wibur.github.io/post/</loc>
     <lastmod>2020-07-21T00:00:00+00:00</lastmod>
   </url>
   
