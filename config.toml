@@ -68,6 +68,12 @@ url = "mailto:yuchihchen159951@gmail.com"
   identifier = "posts"
   url = "/post/"
 
+  [[menu.main]]
+  name = "DB"
+  weight = 200
+  identifier = "databases"
+  url = "/databases/"
+
 [[menu.main]]
   name = "LeetCode"
   weight = 300
